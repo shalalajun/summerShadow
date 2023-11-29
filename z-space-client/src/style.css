@@ -1,0 +1,101 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body
+{
+    overflow: hidden;
+   
+}
+
+label {
+    color:white;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+
+#loadingContainer {
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#networkContainer{
+    background-color: rgba(0, 46, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width:200px;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+}
+
+#textRow {
+    display:flex;
+}
+
+#title-image {
+    position: fixed;  /* 고정된 위치로 설정 */
+    bottom: 2px;     /* 화면 하단으로부터의 거리 */
+    left: 50%;        /* 화면 중앙을 기준으로 왼쪽으로 이동 */
+    transform: translateX(-50%); /* X축을 중심으로 이미지의 중앙을 맞춤 */
+    z-index: 1000;    /* 다른 요소 위에 이미지가 보이도록 z-index를 높게 설정 */
+    width: 10vw; /* 이미지 너비를 viewport 너비의 30%로 설정 */
+    height: 10vh; /* 이미지 높이를 viewport 높이의 30%로 설정 */
+    object-fit: contain; /* 이미지의 비율을 유지하면서 그 안에 맞게 조정 */
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    #title-image {
+        width: 23vw; /* 이미지 너비를 viewport 너비의 30%로 설정 */
+        height: 10vh; /* 이미지 높이를 viewport 높이의 30%로 설정 */
+        object-fit: contain; /* 이미지의 비율을 유지하면서 그 안에 맞게 조정 */
+        bottom: 0px;  /* 원하는 값을 설정하여 빈 공간을 줄입니다. */
+        margin: 0;
+        padding: 0;
+    }
+}
+
+#popupContainer{
+    position: absolute;
+    width: 30%;
+    min-height:80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#popupText{
+    color: #445566;
+}

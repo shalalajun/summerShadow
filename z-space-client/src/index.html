@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiddly z-space</title>
+    <meta name="google" content="notranslate" />
+
+    <script>        
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            //
+            const popup = document.getElementById('popupContainer');
+            popup.style.display = 'none';
+
+            //
+            const btnPopupClose = document.getElementById('popupBtnClose');
+            
+            btnPopupClose?.addEventListener('click', () => {
+                popup.style.display = 'none';
+            });
+        });
+    </script>
+</head>
+<body>
+    <img src="../static/textures/title.png" id="title-image" alt="Title">
+    <canvas class="webgl"></canvas>
+
+    <div id="loadingContainer">
+        <label id="loadingText">loading 23%</label>
+    </div>
+
+    <div id="networkContainer">
+
+        <div id="textRow">
+            <label id="domainText"></label>
+        </div>
+
+        <div id="textRow">
+            <label id="title">status :&nbsp;</label>
+            <label id="statusText"></label>
+        </div>
+        
+        <div id="textRow">
+            <label id="title">count :&nbsp;</label>
+            <label id="countText"></label>
+        </div>
+
+    </div>
+
+    <div id="popupContainer">
+
+        <label id="popupText">아이템을 획득했습니다 넹넹</label>
+        <button id="popupBtnClose">닫기</button>
+        
+    </div>
+</body>
+</html>

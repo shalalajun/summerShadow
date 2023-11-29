@@ -1,0 +1,6 @@
+#debug : gui창 활성화
+#monitor : 왼쪽 위에 stats.js 출력
+#env : 환경관련 gui 보기(light 밝기, 위치, 환경라이팅 밝기)
+#npc : npc 고양이 애니메이션 제어 테스트 했던건데, npc 수가 많아서 사용X
+#pc : 플레이어 캐릭터 고양이 관련 옵션(speed)
+#followCam : 캐릭터를 따라다니는 카메라 관련 옵션
